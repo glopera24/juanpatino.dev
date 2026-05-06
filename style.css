@@ -15,7 +15,6 @@ body{
   color:var(--text);
 }
 
-/* fondo */
 .bg{
   position:fixed;
   width:100%;
@@ -26,11 +25,10 @@ body{
 
 .container{width:90%;max-width:1200px;margin:auto}
 
-/* nav */
 .header{
   position:fixed;
   width:100%;
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.6);
   backdrop-filter:blur(10px);
 }
 
@@ -46,7 +44,6 @@ nav a{
   text-decoration:none;
 }
 
-/* hero */
 .hero{
   min-height:100vh;
   display:flex;
@@ -66,7 +63,6 @@ nav a{
   color:var(--sub);
 }
 
-/* botones */
 .btn{
   padding:12px 20px;
   border-radius:6px;
@@ -85,7 +81,6 @@ nav a{
   color:var(--accent);
 }
 
-/* secciones */
 .section{
   padding:100px 0;
 }
@@ -96,7 +91,6 @@ nav a{
 
 .center{text-align:center}
 
-/* grid */
 .grid{
   display:grid;
   gap:20px;
@@ -108,14 +102,12 @@ nav a{
   border-radius:10px;
 }
 
-/* glass */
 .glass{
   background:rgba(255,255,255,0.05);
   padding:30px;
   border-radius:10px;
 }
 
-/* animaciones */
 .fade{
   opacity:0;
   transform:translateY(30px);
@@ -127,7 +119,6 @@ nav a{
   transform:translateY(0);
 }
 
-/* responsive */
 @media(min-width:900px){
   .hero-grid{grid-template-columns:1fr 1fr}
   .grid{grid-template-columns:repeat(3,1fr)}
