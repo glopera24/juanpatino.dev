@@ -1,0 +1,94 @@
+:root {
+  --bg:#0b0b0b;
+  --bg-soft:#111;
+  --glass:rgba(255,255,255,0.05);
+  --gold:#c7a96b;
+  --text:#fff;
+  --text-soft:#aaa;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* layout */
+.container{width:90%;max-width:1150px;margin:auto}
+.narrow{max-width:700px}
+.center{text-align:center}
+
+/* header */
+.header{padding:20px 0}
+.header .container{display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:600}
+nav a{margin-left:20px;color:var(--text);text-decoration:none;opacity:.7}
+nav a:hover{opacity:1}
+.nav-cta{border:1px solid var(--gold);padding:6px 12px;border-radius:6px}
+
+/* hero */
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+
+.hero h1{font-size:40px;line-height:1.2}
+.accent{color:var(--gold)}
+
+.subtitle{color:var(--text-soft);margin:20px 0}
+
+/* glass card */
+.glass-card{
+  background:var(--glass);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  border-radius:12px;
+}
+.kpis{display:flex;justify-content:space-between;margin-top:20px}
+.kpis div{text-align:center}
+.kpis strong{display:block;font-size:20px}
+
+/* buttons */
+.btn{padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;margin-right:10px}
+.primary{background:var(--gold);color:black}
+.ghost{border:1px solid var(--gold);color:var(--gold)}
+
+/* sections */
+.section{padding:80px 0}
+.dark{background:var(--bg-soft)}
+.title{margin-bottom:30px}
+
+/* grid */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--bg-soft);padding:20px;border-radius:10px}
+
+/* process */
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step span{color:var(--gold);font-weight:bold}
+
+/* bullets */
+.bullets{color:var(--text-soft);margin-top:20px}
+
+/* CTA final */
+.cta-final{background:linear-gradient(180deg,#0b0b0b,#111)}
+
+/* footer */
+.footer{text-align:center;padding:40px;color:var(--text-soft)}
+
+/* float */
+.whatsapp-float{
+  position:fixed;bottom:20px;right:20px;
+  background:#25d366;color:white;padding:15px;border-radius:50%;
+  text-decoration:none;
+}
+
+/* animations */
+.fade-in{opacity:0;transform:translateY(30px);transition:1s}
+.visible{opacity:1;transform:translateY(0)}
+
+/* responsive */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .process{grid-template-columns:1fr 1fr}
+}
