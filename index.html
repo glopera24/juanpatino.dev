@@ -1,178 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Juan Patiño | Software Consultant</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Juan Patiño | Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
+<canvas id="matrix"></canvas>
+
 <header class="header">
   <div class="container">
     <div class="brand">Juan Patiño</div>
     <nav>
       <a href="#services">Servicios</a>
-      <a href="#process">Proceso</a>
       <a href="#experience">Experiencia</a>
-      <a href="#contact" class="nav-cta">Contacto</a>
+      <a href="#contact">Contacto</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-left fade-in">
-      <h1>
-        Ingeniería de software para empresas que necesitan
-        <span class="accent">escala, estabilidad y rendimiento</span>
-      </h1>
+  <div class="container hero-content">
+    <h1>
+      Ingeniería de software para sistemas
+      <span class="accent">robustos, escalables y reales</span>
+    </h1>
 
-      <p class="subtitle">
-        Diseño y desarrollo de sistemas web robustos, optimización de plataformas existentes
-        y acompañamiento técnico para equipos que requieren resultados medibles.
-      </p>
-
-      <div class="cta">
-        <a href="https://wa.me/573203635840" class="btn primary">Hablar por WhatsApp</a>
-        <a href="#contact" class="btn ghost">Agendar diagnóstico</a>
-      </div>
-
-      <div class="trust">
-        <span>Trabajo con empresas bajo modalidad de contratista</span>
-        <span>•</span>
-        <span>Entrega orientada a resultados</span>
-      </div>
-    </div>
-
-    <div class="hero-right fade-in">
-      <div class="glass-card">
-        <p class="kpi-title">Indicadores</p>
-        <div class="kpis">
-          <div>
-            <strong>+4 años</strong>
-            <span>Experiencia</span>
-          </div>
-          <div>
-            <strong>+20</strong>
-            <span>Proyectos</span>
-          </div>
-          <div>
-            <strong>High</strong>
-            <span>Performance</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS -->
-<section id="services" class="section">
-  <div class="container">
-    <h2 class="title">Servicios</h2>
-
-    <div class="grid-3">
-
-      <div class="card fade-in">
-        <h3>Desarrollo a medida</h3>
-        <p>Aplicaciones web empresariales enfocadas en estabilidad, seguridad y escalabilidad.</p>
-      </div>
-
-      <div class="card fade-in">
-        <h3>Arquitectura</h3>
-        <p>Diseño de sistemas distribuidos, APIs y estructuras preparadas para crecimiento.</p>
-      </div>
-
-      <div class="card fade-in">
-        <h3>Consultoría técnica</h3>
-        <p>Diagnóstico, optimización y mejora de plataformas existentes.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROCESO -->
-<section id="process" class="section dark">
-  <div class="container">
-    <h2 class="title">Metodología de trabajo</h2>
-
-    <div class="process">
-
-      <div class="step fade-in">
-        <span>01</span>
-        <h4>Análisis</h4>
-        <p>Evaluación técnica y definición de objetivos.</p>
-      </div>
-
-      <div class="step fade-in">
-        <span>02</span>
-        <h4>Arquitectura</h4>
-        <p>Diseño de solución alineada a negocio.</p>
-      </div>
-
-      <div class="step fade-in">
-        <span>03</span>
-        <h4>Desarrollo</h4>
-        <p>Implementación con enfoque en calidad.</p>
-      </div>
-
-      <div class="step fade-in">
-        <span>04</span>
-        <h4>Optimización</h4>
-        <p>Mejora continua y rendimiento.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCIA -->
-<section id="experience" class="section">
-  <div class="container narrow">
-    <h2 class="title">Experiencia</h2>
-
-    <p class="fade-in">
-      Experiencia trabajando con empresas bajo modalidad de contratación independiente,
-      participando en proyectos de alto impacto donde la estabilidad y el rendimiento son críticos.
+    <p>
+      +6 años construyendo soluciones para empresas.
+      Desarrollo, arquitectura y optimización de plataformas críticas.
     </p>
 
-    <ul class="bullets fade-in">
-      <li>Desarrollo de sistemas escalables</li>
-      <li>Integración de APIs y microservicios</li>
-      <li>Optimización de rendimiento</li>
-      <li>Soporte técnico avanzado</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="section cta-final">
-  <div class="container center fade-in">
-    <h2>¿Necesitas escalar tu sistema o mejorar su rendimiento?</h2>
-    <p>Agenda una conversación y evaluamos tu caso.</p>
-
     <div class="cta">
-      <a href="mailto:vivolimpio@gmail.com" class="btn primary">Enviar correo</a>
-      <a href="https://wa.me/573203635840" class="btn ghost">WhatsApp</a>
+      <a href="https://wa.me/573203635840" class="btn primary">WhatsApp</a>
+      <a href="#contact" class="btn ghost">Contacto</a>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <p>© 2026 Juan Patiño — Software Consultant</p>
-</footer>
+<section id="services" class="section">
+  <div class="container">
+    <h2>Servicios</h2>
 
-<!-- FLOAT -->
-<a href="https://wa.me/573203635840" class="whatsapp-float">💬</a>
+    <div class="grid">
+
+      <div class="card">Desarrollo web a medida</div>
+      <div class="card">Arquitectura de software</div>
+      <div class="card">Optimización de sistemas</div>
+      <div class="card">Integración de APIs</div>
+      <div class="card">Automatización de procesos</div>
+      <div class="card">Consultoría técnica</div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section dark">
+  <div class="container">
+    <h2>Experiencia</h2>
+
+    <div class="metrics">
+      <div><strong>+6</strong><span>Años</span></div>
+      <div><strong>+30</strong><span>Proyectos</span></div>
+      <div><strong>Alta</strong><span>Escalabilidad</span></div>
+    </div>
+
+    <p>
+      Experiencia trabajando con empresas bajo modalidad independiente,
+      desarrollando sistemas que requieren estabilidad y alto rendimiento.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container center">
+    <h2>Contacto</h2>
+
+    <p>Hablemos de tu proyecto</p>
+
+    <a href="mailto:vivolimpio@gmail.com" class="btn primary">Enviar correo</a>
+  </div>
+</section>
+
+<a href="https://wa.me/573203635840" class="whatsapp">💬</a>
 
 <script src="script.js"></script>
 
