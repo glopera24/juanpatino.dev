@@ -1040,7 +1040,8 @@ FIX MOBILE
 }
 
 /* =========================================
-MATRIX EFFECT
+/* =========================================
+MATRIX
 ========================================= */
 
 .matrix{
@@ -1049,11 +1050,11 @@ MATRIX EFFECT
 
   inset:0;
 
+  overflow:hidden;
+
   pointer-events:none;
 
   z-index:-2;
-
-  overflow:hidden;
 
 }
 
@@ -1061,13 +1062,16 @@ MATRIX EFFECT
 
   position:absolute;
 
-  top:-50px;
+  top:-100px;
 
   color:rgba(255,255,255,0.08);
 
-  animation:matrixFall linear infinite;
-
   font-family:monospace;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.15);
+
+  animation:matrixFall linear infinite;
 
 }
 
@@ -1082,7 +1086,6 @@ MATRIX EFFECT
   }
 
 }
-
 /* =========================================
 CURSOR GLOW
 ========================================= */
