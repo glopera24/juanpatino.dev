@@ -355,40 +355,39 @@ if(codeCard){
 // RANDOM MATRIX SYMBOLS
 // ======================================================
 
-const matrixContainer = document.createElement('div')
+const matrixContainer =
+  document.createElement('div')
 
 matrixContainer.classList.add('matrix')
 
 document.body.appendChild(matrixContainer)
 
-const chars = '01'
+for(let i = 0; i < 80; i++){
 
-for(let i = 0; i < 50; i++){
-
-  const span = document.createElement('span')
+  const span =
+    document.createElement('span')
 
   span.innerText =
-  Math.random() > 0.5 ? '1' : '0'
+    Math.random() > 0.5 ? '1' : '0'
 
   span.style.left =
-  Math.random() * window.innerWidth + 'px'
-
-  span.style.opacity =
-  Math.random()
-
-span.style.fontSize =
-  (Math.random() * 18 + 10) + 'px'
+    Math.random() * window.innerWidth + 'px'
 
   span.style.animationDuration =
-    (Math.random() * 5 + 5) + 's'
+    (Math.random() * 10 + 8) + 's'
+
+  span.style.animationDelay =
+    Math.random() * 5 + 's'
+
+  span.style.opacity =
+    Math.random()
 
   span.style.fontSize =
-    (Math.random() * 10 + 10) + 'px'
+    (Math.random() * 20 + 10) + 'px'
 
   matrixContainer.appendChild(span)
 
 }
-
 
 // ======================================================
 // LOADER SCREEN
