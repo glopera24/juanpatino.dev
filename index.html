@@ -1,73 +1,91 @@
-# index.html
-
-```html
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Juan Patiño | Software Engineering</title>
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Juan Patiño | Software Engineer
+  </title>
 
   <meta
     name="description"
-    content="Desarrollo software escalable, automatizaciones y arquitectura de sistemas para empresas que quieren crecer sin límites."
+    content="Desarrollo de software premium, automatización y arquitectura escalable para empresas."
   />
 
-  <!-- Favicon -->
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon.png">
+
+  <!-- FONTS -->
   <link
-    rel="icon"
-    type="image/png"
-    href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
-  />
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Remix Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- REMIX ICON -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  >
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
   <!-- BACKGROUND -->
   <div class="bg-grid"></div>
+
   <div class="gradient gradient-1"></div>
   <div class="gradient gradient-2"></div>
 
   <!-- HEADER -->
   <header class="header" id="header">
+
     <div class="container nav">
 
       <div class="logo">
-        <div class="logo-icon">
-          <i class="ri-code-s-slash-line"></i>
-        </div>
-
-        <div>
-          <span>Juan Patiño</span>
-          <small>Software Engineer</small>
-        </div>
+        <i class="ri-code-s-slash-line"></i>
+        Juan Patiño
       </div>
 
       <nav class="desktop-nav">
-        <a href="#services">Servicios</a>
-        <a href="#results">Resultados</a>
-        <a href="#process">Proceso</a>
-        <a href="#contact">Contacto</a>
+
+        <a href="#services">
+          Servicios
+        </a>
+
+        <a href="#results">
+          Resultados
+        </a>
+
+        <a href="#process">
+          Proceso
+        </a>
+
+        <a href="#about">
+          Sobre mí
+        </a>
+
+        <a href="#contact">
+          Contacto
+        </a>
+
       </nav>
 
-      <a href="https://wa.me/573203635840" class="btn primary small-btn">
-        Agendar llamada
-      </a>
-
     </div>
+
   </header>
 
   <!-- HERO -->
@@ -75,49 +93,64 @@
 
     <div class="container hero-grid">
 
+      <!-- LEFT -->
       <div class="hero-left fade-up">
 
-        <div class="badge">
-          <span></span>
-          Ingeniería de software · Automatización · Escalabilidad
+        <div class="hero-badge">
+          <i class="ri-flashlight-line"></i>
+          Ingeniería de software premium
         </div>
 
         <h1>
-          Construyo sistemas que ayudan a empresas a crecer sin límites
+          Desarrollo sistemas
+          preparados para crecer
+          sin límites
         </h1>
 
-        <p>
-          Desarrollo plataformas modernas, automatizo procesos y optimizo operaciones
-          para empresas que necesitan velocidad, escalabilidad y estabilidad.
+        <p class="hero-text">
+
+          Diseño plataformas escalables,
+          automatizaciones empresariales
+          y arquitecturas robustas para
+          empresas que necesitan crecer
+          sin fricciones tecnológicas.
+
         </p>
 
         <div class="hero-buttons">
-          <a href="https://wa.me/573203635840?text=Hola,%20quiero%20optimizar%20mi%20empresa"
-            class="btn primary">
+
+          <a
+            href="https://wa.me/573203635840"
+            class="btn primary"
+          >
             <i class="ri-whatsapp-line"></i>
-            Hablar por WhatsApp
+            Agendar llamada
           </a>
 
-          <a href="#services" class="btn secondary">
+          <a
+            href="#services"
+            class="btn ghost"
+          >
             Ver servicios
           </a>
+
         </div>
 
         <div class="hero-stats">
 
-          <div>
-            <strong>+6</strong>
-            <span>Años</span>
-          </div>
-
-          <div>
+          <div class="stat">
             <strong>+30</strong>
             <span>Proyectos</span>
           </div>
 
-          <div>
-            <strong>99%</strong>
-            <span>Disponibilidad</span>
+          <div class="stat">
+            <strong>+6</strong>
+            <span>Años</span>
+          </div>
+
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Escalable</span>
           </div>
 
         </div>
@@ -125,26 +158,24 @@
       </div>
 
       <!-- RIGHT -->
-      <div class="hero-right fade-up delay">
+      <div class="hero-right fade-up">
 
         <div class="code-card">
 
 <pre>
-<span class="purple">const</span> business = {
-  growth: <span class="green">true</span>,
-  automation: <span class="green">true</span>,
-  scalability: <span class="green">true</span>,
-  bottlenecks: <span class="red">false</span>
+<code>
+
+const business = {
+  performance: "optimized",
+  scalability: true,
+  automation: true,
+  revenueGrowth: "high"
 }
 
-<span class="blue">optimize</span>(business)
-</pre>
+deploy(system)
 
-          <div class="terminal-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+</code>
+</pre>
 
         </div>
 
@@ -154,64 +185,190 @@
 
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section">
+  <!-- STACK -->
+  <section class="section stack-section">
+
+    <div class="container">
+
+      <div class="section-title center fade-up">
+
+        <small>
+          TECNOLOGÍAS
+        </small>
+
+        <h2>
+          Stack moderno para
+          aplicaciones escalables
+        </h2>
+
+      </div>
+
+      <div class="stack-grid fade-up">
+
+        <div class="stack-item">
+          <i class="ri-reactjs-line"></i>
+          <span>React</span>
+        </div>
+
+        <div class="stack-item">
+          <i class="ri-nodejs-line"></i>
+          <span>Node.js</span>
+        </div>
+
+        <div class="stack-item">
+          <i class="ri-database-2-line"></i>
+          <span>PostgreSQL</span>
+        </div>
+
+        <div class="stack-item">
+          <i class="ri-cloud-line"></i>
+          <span>AWS</span>
+        </div>
+
+        <div class="stack-item">
+          <i class="ri-terminal-box-line"></i>
+          <span>Docker</span>
+        </div>
+
+        <div class="stack-item">
+          <i class="ri-code-box-line"></i>
+          <span>API REST</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+    <!-- SERVICES -->
+  <section
+    id="services"
+    class="section"
+  >
 
     <div class="container">
 
       <div class="section-title fade-up">
-        <small>SERVICIOS</small>
-        <h2>Soluciones enfocadas en crecimiento</h2>
+
+        <small>
+          SERVICIOS
+        </small>
+
+        <h2>
+          Soluciones diseñadas
+          para crecimiento real
+        </h2>
+
       </div>
 
-      <div class="cards-grid">
+      <div class="services-grid">
 
         <div class="service-card fade-up">
-          <i class="ri-terminal-window-line"></i>
-          <h3>Software a medida</h3>
+
+          <div class="icon">
+            <i class="ri-code-box-line"></i>
+          </div>
+
+          <h3>
+            Desarrollo a medida
+          </h3>
+
           <p>
-            Sistemas adaptados exactamente a la operación de tu empresa.
+            Sistemas personalizados
+            según los procesos reales
+            de tu empresa.
           </p>
+
         </div>
 
         <div class="service-card fade-up delay">
-          <i class="ri-flashlight-line"></i>
-          <h3>Automatización</h3>
+
+          <div class="icon">
+            <i class="ri-server-line"></i>
+          </div>
+
+          <h3>
+            Arquitectura escalable
+          </h3>
+
           <p>
-            Reduce trabajo manual y elimina procesos repetitivos.
+            Infraestructura sólida
+            preparada para alto
+            volumen de usuarios.
           </p>
+
         </div>
 
         <div class="service-card fade-up delay-2">
-          <i class="ri-cloud-line"></i>
-          <h3>Arquitectura escalable</h3>
+
+          <div class="icon">
+            <i class="ri-flashlight-line"></i>
+          </div>
+
+          <h3>
+            Optimización
+          </h3>
+
           <p>
-            Infraestructura preparada para crecimiento real.
+            Mejora rendimiento,
+            estabilidad y costos
+            operativos.
           </p>
+
         </div>
 
         <div class="service-card fade-up">
-          <i class="ri-links-line"></i>
-          <h3>Integraciones</h3>
+
+          <div class="icon">
+            <i class="ri-links-line"></i>
+          </div>
+
+          <h3>
+            Integraciones
+          </h3>
+
           <p>
-            APIs, CRM, pagos y herramientas conectadas.
+            APIs, CRM, ERP, pagos
+            y automatizaciones
+            conectadas.
           </p>
+
         </div>
 
         <div class="service-card fade-up delay">
-          <i class="ri-speed-up-line"></i>
-          <h3>Optimización</h3>
+
+          <div class="icon">
+            <i class="ri-robot-line"></i>
+          </div>
+
+          <h3>
+            Automatización
+          </h3>
+
           <p>
-            Más velocidad, menos costos y mejor rendimiento.
+            Procesos inteligentes
+            para reducir tareas
+            manuales.
           </p>
+
         </div>
 
         <div class="service-card fade-up delay-2">
-          <i class="ri-line-chart-line"></i>
-          <h3>Escalabilidad</h3>
+
+          <div class="icon">
+            <i class="ri-line-chart-line"></i>
+          </div>
+
+          <h3>
+            Consultoría técnica
+          </h3>
+
           <p>
-            Sistemas sólidos para alto volumen de usuarios.
+            Tecnología alineada
+            con objetivos
+            de negocio.
           </p>
+
         </div>
 
       </div>
@@ -221,30 +378,65 @@
   </section>
 
   <!-- RESULTS -->
-  <section id="results" class="section dark-section">
+  <section
+    id="results"
+    class="section dark-section"
+  >
 
     <div class="container">
 
       <div class="section-title center fade-up">
-        <small>RESULTADOS</small>
-        <h2>Tecnología pensada para negocio</h2>
+
+        <small>
+          RESULTADOS
+        </small>
+
+        <h2>
+          Ingeniería enfocada
+          en resultados reales
+        </h2>
+
       </div>
 
       <div class="results-grid">
 
         <div class="result-card fade-up">
-          <h3>+60%</h3>
-          <p>Mejora en rendimiento operativo</p>
+
+          <h3>
+            +60%
+          </h3>
+
+          <p>
+            Mejora en rendimiento
+            de plataforma empresarial.
+          </p>
+
         </div>
 
         <div class="result-card fade-up delay">
-          <h3>0</h3>
-          <p>Errores manuales tras automatización</p>
+
+          <h3>
+            100%
+          </h3>
+
+          <p>
+            Automatización de
+            procesos manuales.
+          </p>
+
         </div>
 
         <div class="result-card fade-up delay-2">
-          <h3>24/7</h3>
-          <p>Disponibilidad y estabilidad</p>
+
+          <h3>
+            x10
+          </h3>
+
+          <p>
+            Sistemas preparados
+            para crecimiento masivo.
+          </p>
+
         </div>
 
       </div>
@@ -254,39 +446,70 @@
   </section>
 
   <!-- PROCESS -->
-  <section id="process" class="section">
+  <section
+    id="process"
+    class="section"
+  >
 
     <div class="container">
 
       <div class="section-title fade-up">
-        <small>PROCESO</small>
-        <h2>Cómo trabajamos</h2>
+
+        <small>
+          PROCESO
+        </small>
+
+        <h2>
+          Cómo trabajo
+        </h2>
+
       </div>
 
       <div class="timeline">
 
         <div class="timeline-item fade-up">
-          <div class="number">01</div>
-          <div>
-            <h3>Diagnóstico</h3>
-            <p>Analizo la operación y detecto cuellos de botella.</p>
-          </div>
+
+          <span>01</span>
+
+          <h3>
+            Diagnóstico
+          </h3>
+
+          <p>
+            Analizo procesos,
+            problemas y oportunidades.
+          </p>
+
         </div>
 
         <div class="timeline-item fade-up delay">
-          <div class="number">02</div>
-          <div>
-            <h3>Estrategia</h3>
-            <p>Diseño una solución técnica alineada a negocio.</p>
-          </div>
+
+          <span>02</span>
+
+          <h3>
+            Estrategia
+          </h3>
+
+          <p>
+            Diseño arquitectura
+            y roadmap técnico.
+          </p>
+
         </div>
 
         <div class="timeline-item fade-up delay-2">
-          <div class="number">03</div>
-          <div>
-            <h3>Implementación</h3>
-            <p>Desarrollo sólido, rápido y listo para escalar.</p>
-          </div>
+
+          <span>03</span>
+
+          <h3>
+            Desarrollo
+          </h3>
+
+          <p>
+            Construcción sólida
+            lista para producción.
+          </p>
+
         </div>
 
       </div>
@@ -295,856 +518,186 @@
 
   </section>
 
-  <!-- CTA -->
-  <section id="contact" class="cta-section">
+    <!-- ABOUT -->
+  <section
+    id="about"
+    class="section dark-section"
+  >
 
-    <div class="container cta-box fade-up">
+    <div class="container about-grid">
 
-      <small>¿Listo para optimizar tu empresa?</small>
+      <div class="fade-up">
 
-      <h2>
-        La tecnología correcta puede ahorrarte tiempo,
-        dinero y errores operativos.
-      </h2>
+        <div class="section-title">
 
-      <a href="https://wa.me/573203635840?text=Hola,%20quiero%20hablar%20sobre%20mi%20empresa"
-         class="btn primary large-btn">
-        <i class="ri-whatsapp-line"></i>
-        Solicitar diagnóstico
-      </a>
+          <small>
+            SOBRE MÍ
+          </small>
+
+          <h2>
+            Ingeniería enfocada
+            en negocio
+          </h2>
+
+        </div>
+
+        <p class="about-text">
+
+          No solo desarrollo software.
+          Diseño soluciones enfocadas
+          en crecimiento, automatización
+          y estabilidad para empresas
+          que necesitan escalar.
+
+        </p>
+
+      </div>
+
+      <div class="about-card fade-up delay">
+
+        <div>
+          <strong>+30 proyectos</strong>
+          <span>desarrollados</span>
+        </div>
+
+        <div>
+          <strong>+6 años</strong>
+          <span>de experiencia</span>
+        </div>
+
+        <div>
+          <strong>Full Stack</strong>
+          <span>Frontend + Backend</span>
+        </div>
+
+      </div>
 
     </div>
 
   </section>
 
-  <!-- FLOAT -->
-  <a href="https://wa.me/573203635840" class="float-btn">
+  <!-- FAQ -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title center fade-up">
+
+        <small>
+          FAQ
+        </small>
+
+        <h2>
+          Preguntas frecuentes
+        </h2>
+
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item fade-up">
+
+          <h3>
+            ¿Trabajas proyectos grandes?
+          </h3>
+
+          <p>
+            Sí. Desde automatizaciones
+            hasta plataformas empresariales.
+          </p>
+
+        </div>
+
+        <div class="faq-item fade-up delay">
+
+          <h3>
+            ¿Ofreces soporte?
+          </h3>
+
+          <p>
+            Sí. Incluyo mantenimiento
+            y mejoras evolutivas.
+          </p>
+
+        </div>
+
+        <div class="faq-item fade-up delay-2">
+
+          <h3>
+            ¿Cómo trabajas?
+          </h3>
+
+          <p>
+            Trabajo por roadmap,
+            entregas y objetivos claros.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section
+    id="contact"
+    class="section contact-section"
+  >
+
+    <div class="container">
+
+      <div class="cta-box fade-up">
+
+        <small>
+          CONTACTO
+        </small>
+
+        <h2>
+          Hablemos de tu proyecto
+        </h2>
+
+        <p>
+          Cuéntame qué necesitas
+          y construyamos algo sólido.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="https://wa.me/573203635840"
+            class="btn primary"
+          >
+            <i class="ri-whatsapp-line"></i>
+            WhatsApp
+          </a>
+
+          <a
+            href="mailto:correo@juanpatino.dev"
+            class="btn ghost"
+          >
+            Correo
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FLOATING BUTTON -->
+  <a
+    href="https://wa.me/573203635840"
+    class="whatsapp-float"
+  >
     <i class="ri-whatsapp-line"></i>
   </a>
 
+  <!-- SCRIPT -->
   <script src="script.js"></script>
+
 </body>
 </html>
-```
-
----
-
-# style.css
-
-```css
-:root{
-  --bg:#050816;
-  --card:#0d1224;
-  --border:rgba(255,255,255,0.08);
-  --text:#ffffff;
-  --sub:#9ca3af;
-  --primary:#7c3aed;
-  --secondary:#06b6d4;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
-}
-
-.container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
-
-.bg-grid{
-  position:fixed;
-  width:100%;
-  height:100%;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size:50px 50px;
-  z-index:-3;
-}
-
-.gradient{
-  position:fixed;
-  width:500px;
-  height:500px;
-  border-radius:50%;
-  filter:blur(120px);
-  z-index:-2;
-}
-
-.gradient-1{
-  background:#7c3aed;
-  top:-100px;
-  left:-100px;
-  opacity:0.25;
-}
-
-.gradient-2{
-  background:#06b6d4;
-  bottom:-100px;
-  right:-100px;
-  opacity:0.2;
-}
-
-.header{
-  position:fixed;
-  width:100%;
-  top:0;
-  z-index:1000;
-  transition:0.3s ease;
-}
-
-.header.scrolled{
-  background:rgba(5,8,22,0.8);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,255,255,0.05);
-}
-
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 0;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
-
-.logo-icon{
-  width:46px;
-  height:46px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-}
-
-.logo span{
-  display:block;
-  font-weight:700;
-}
-
-.logo small{
-  color:var(--sub);
-}
-
-.desktop-nav{
-  display:flex;
-  gap:30px;
-}
-
-.desktop-nav a{
-  color:#fff;
-  text-decoration:none;
-  position:relative;
-}
-
-.desktop-nav a::after{
-  content:'';
-  position:absolute;
-  width:0%;
-  height:2px;
-  background:var(--secondary);
-  left:0;
-  bottom:-6px;
-  transition:0.3s;
-}
-
-.desktop-nav a:hover::after{
-  width:100%;
-}
-
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:80px;
-  align-items:center;
-}
-
-.badge{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:10px 18px;
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:100px;
-  margin-bottom:30px;
-  background:rgba(255,255,255,0.03);
-  color:#cbd5e1;
-}
-
-.badge span{
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#00ff88;
-  box-shadow:0 0 10px #00ff88;
-}
-
-.hero h1{
-  font-size:64px;
-  line-height:1.05;
-  margin-bottom:24px;
-}
-
-.hero p{
-  color:var(--sub);
-  font-size:18px;
-  line-height:1.7;
-  max-width:650px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:18px;
-  margin-top:40px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:16px 28px;
-  border-radius:16px;
-  text-decoration:none;
-  transition:0.3s ease;
-  font-weight:600;
-}
-
-.primary{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:#fff;
-  box-shadow:0 15px 40px rgba(124,58,237,0.3);
-}
-
-.primary:hover{
-  transform:translateY(-4px);
-}
-
-.secondary{
-  border:1px solid rgba(255,255,255,0.08);
-  color:#fff;
-  background:rgba(255,255,255,0.03);
-}
-
-.secondary:hover{
-  background:rgba(255,255,255,0.08);
-}
-
-.hero-stats{
-  display:flex;
-  gap:50px;
-  margin-top:60px;
-}
-
-.hero-stats strong{
-  display:block;
-  font-size:34px;
-}
-
-.hero-stats span{
-  color:var(--sub);
-}
-
-.code-card{
-  background:#0b1020;
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:28px;
-  padding:40px;
-  position:relative;
-  overflow:hidden;
-  box-shadow:0 30px 60px rgba(0,0,0,0.4);
-}
-
-.code-card::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(135deg,transparent,rgba(255,255,255,0.03));
-}
-
-.code-card pre{
-  font-size:18px;
-  line-height:1.8;
-  color:#fff;
-}
-
-.purple{color:#c084fc}
-.blue{color:#38bdf8}
-.green{color:#4ade80}
-.red{color:#f87171}
-
-.terminal-bar{
-  display:flex;
-  gap:10px;
-  margin-top:30px;
-}
-
-.terminal-bar span{
-  width:14px;
-  height:14px;
-  border-radius:50%;
-}
-
-.terminal-bar span:nth-child(1){background:#ff5f57}
-.terminal-bar span:nth-child(2){background:#febc2e}
-.terminal-bar span:nth-child(3){background:#28c840}
-
-.section{
-  padding:120px 0;
-}
-
-.dark-section{
-  background:rgba(255,255,255,0.02);
-}
-
-.section-title{
-  margin-bottom:60px;
-}
-
-.section-title small{
-  color:var(--secondary);
-  letter-spacing:2px;
-}
-
-.section-title h2{
-  font-size:48px;
-  margin-top:10px;
-}
-
-.center{
-  text-align:center;
-}
-
-.cards-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.service-card,
-.result-card{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.06);
-  padding:35px;
-  border-radius:24px;
-  transition:0.35s ease;
-  position:relative;
-  overflow:hidden;
-}
-
-.service-card:hover,
-.result-card:hover{
-  transform:translateY(-10px);
-  border-color:rgba(124,58,237,0.4);
-}
-
-.service-card i{
-  font-size:34px;
-  margin-bottom:20px;
-  display:inline-block;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.service-card h3,
-.result-card h3{
-  margin-bottom:14px;
-  font-size:24px;
-}
-
-.service-card p,
-.result-card p{
-  color:var(--sub);
-  line-height:1.7;
-}
-
-.results-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.result-card h3{
-  font-size:60px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.timeline{
-  display:flex;
-  flex-direction:column;
-  gap:30px;
-}
-
-.timeline-item{
-  display:flex;
-  gap:30px;
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.05);
-  padding:35px;
-  border-radius:24px;
-}
-
-.number{
-  min-width:70px;
-  height:70px;
-  border-radius:20px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  font-size:22px;
-}
-
-.timeline-item p{
-  color:var(--sub);
-  margin-top:10px;
-}
-
-.cta-section{
-  padding:140px 0;
-}
-
-.cta-box{
-  background:linear-gradient(135deg,rgba(124,58,237,0.15),rgba(6,182,212,0.1));
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:32px;
-  padding:70px;
-  text-align:center;
-}
-
-.cta-box small{
-  color:var(--secondary);
-  letter-spacing:2px;
-}
-
-.cta-box h2{
-  font-size:48px;
-  max-width:900px;
-  margin:20px auto 40px;
-}
-
-.float-btn{
-  position:fixed;
-  bottom:24px;
-  right:24px;
-  width:68px;
-  height:68px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(135deg,#25D366,#1ebe5d);
-  color:#fff;
-  font-size:30px;
-  text-decoration:none;
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
-  z-index:999;
-  animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-  0%{transform:scale(1)}
-  50%{transform:scale(1.08)}
-  100%{transform:scale(1)}
-}
-
-.fade-up{
-  opacity:0;
-  transform:translateY(40px);
-  transition:0.8s ease;
-}
-
-.fade-up.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.delay{
-  transition-delay:0.15s;
-}
-
-.delay-2{
-  transition-delay:0.3s;
-}
-
-@media(max-width:980px){
-
-  .hero-grid,
-  .cards-grid,
-  .results-grid{
-    grid-template-columns:1fr;
-  }
-
-  .desktop-nav{
-    display:none;
-  }
-
-  .hero{
-    padding-top:140px;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .hero-buttons,
-  .hero-stats{
-    flex-direction:column;
-    gap:20px;
-  }
-
-  .section-title h2,
-  .cta-box h2{
-    font-size:34px;
-  }
-
-  .cta-box{
-    padding:40px 30px;
-  }
-
-}
-```
-
----
-
-# script.js
-
-```javascript
-// =========================
-// REVEAL ANIMATIONS
-// =========================
-const fades = document.querySelectorAll('.fade-up')
-
-const observer = new IntersectionObserver((entries)=>{
-
-  entries.forEach(entry=>{
-
-    if(entry.isIntersecting){
-      entry.target.classList.add('show')
-    }
-
-  })
-
-},{
-  threshold:0.15
-})
-
-fades.forEach(el=>observer.observe(el))
-
-// =========================
-// HEADER EFFECT
-// =========================
-const header = document.getElementById('header')
-
-window.addEventListener('scroll',()=>{
-
-  if(window.scrollY > 40){
-    header.classList.add('scrolled')
-  }else{
-    header.classList.remove('scrolled')
-  }
-
-})
-
-// =========================
-// CURSOR GLOW EFFECT
-// =========================
-const glow = document.createElement('div')
-glow.classList.add('cursor-glow')
-document.body.appendChild(glow)
-
-window.addEventListener('mousemove',(e)=>{
-
-  glow.style.left = `${e.clientX}px`
-  glow.style.top = `${e.clientY}px`
-
-})
-
-// =========================
-// PARALLAX EFFECT
-// =========================
-const gradients = document.querySelectorAll('.gradient')
-
-window.addEventListener('mousemove',(e)=>{
-
-  const x = e.clientX / window.innerWidth
-  const y = e.clientY / window.innerHeight
-
-  gradients.forEach((gradient,index)=>{
-
-    const speed = (index + 1) * 30
-
-    gradient.style.transform = `translate(${x * speed}px, ${y * speed}px)`
-
-  })
-
-})
-
-// =========================
-// TYPING EFFECT
-// =========================
-const title = document.querySelector('.hero h1')
-
-const originalText = title.innerHTML
-
-let i = 0
-
-title.innerHTML = ''
-
-function typing(){
-
-  if(i < originalText.length){
-
-    title.innerHTML += originalText.charAt(i)
-    i++
-
-    setTimeout(typing,20)
-
-  }
-
-}
-
-typing()
-
-// =========================
-// FLOATING PARTICLES
-// =========================
-const particlesContainer = document.createElement('div')
-particlesContainer.classList.add('particles')
-document.body.appendChild(particlesContainer)
-
-for(let i = 0; i < 30; i++){
-
-  const particle = document.createElement('span')
-
-  particle.style.left = Math.random() * 100 + 'vw'
-  particle.style.animationDuration = (Math.random() * 10 + 10) + 's'
-  particle.style.animationDelay = Math.random() * 5 + 's'
-
-  particlesContainer.appendChild(particle)
-
-}
-```
-
----
-
-# CSS EXTRA (AGREGAR AL FINAL DE style.css)
-
-```css
-/* =========================
-   CURSOR GLOW
-========================= */
-.cursor-glow{
-  position:fixed;
-  width:300px;
-  height:300px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(124,58,237,0.18), transparent 70%);
-  pointer-events:none;
-  transform:translate(-50%, -50%);
-  z-index:-1;
-  transition:transform 0.05s linear;
-}
-
-/* =========================
-   FLOATING PARTICLES
-========================= */
-.particles{
-  position:fixed;
-  inset:0;
-  overflow:hidden;
-  z-index:-2;
-}
-
-.particles span{
-  position:absolute;
-  bottom:-20px;
-  width:3px;
-  height:3px;
-  border-radius:50%;
-  background:rgba(255,255,255,0.3);
-  animation:floatParticle linear infinite;
-}
-
-@keyframes floatParticle{
-
-  from{
-    transform:translateY(0);
-    opacity:0;
-  }
-
-  20%{
-    opacity:1;
-  }
-
-  to{
-    transform:translateY(-120vh);
-    opacity:0;
-  }
-
-}
-
-/* =========================
-   HERO ENTRANCE
-========================= */
-.hero-left{
-  animation:heroLeft 1.2s ease forwards;
-}
-
-.hero-right{
-  animation:heroRight 1.2s ease forwards;
-}
-
-@keyframes heroLeft{
-
-  from{
-    opacity:0;
-    transform:translateX(-60px);
-  }
-
-  to{
-    opacity:1;
-    transform:translateX(0);
-  }
-
-}
-
-@keyframes heroRight{
-
-  from{
-    opacity:0;
-    transform:translateX(60px);
-  }
-
-  to{
-    opacity:1;
-    transform:translateX(0);
-  }
-
-}
-
-/* =========================
-   PREMIUM CARD EFFECTS
-========================= */
-.service-card::before,
-.result-card::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(135deg, rgba(255,255,255,0.05), transparent);
-  opacity:0;
-  transition:0.4s ease;
-}
-
-.service-card:hover::before,
-.result-card:hover::before{
-  opacity:1;
-}
-
-.service-card:hover,
-.result-card:hover,
-.timeline-item:hover{
-  box-shadow:0 30px 60px rgba(124,58,237,0.15);
-}
-
-/* =========================
-   BUTTON GLOW
-========================= */
-.primary{
-  position:relative;
-  overflow:hidden;
-}
-
-.primary::before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:-100%;
-  width:100%;
-  height:100%;
-  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-  transition:0.8s;
-}
-
-.primary:hover::before{
-  left:100%;
-}
-
-/* =========================
-   CODE CARD FLOAT
-========================= */
-.code-card{
-  animation:floatCard 6s ease-in-out infinite;
-}
-
-@keyframes floatCard{
-
-  0%{
-    transform:translateY(0px);
-  }
-
-  50%{
-    transform:translateY(-12px);
-  }
-
-  100%{
-    transform:translateY(0px);
-  }
-
-}
-
-/* =========================
-   SCROLLBAR
-========================= */
-::-webkit-scrollbar{
-  width:10px;
-}
-
-::-webkit-scrollbar-track{
-  background:#050816;
-}
-
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(var(--primary),var(--secondary));
-  border-radius:20px;
-}
-
-/* =========================
-   GLASSMORPHISM
-========================= */
-.service-card,
-.result-card,
-.timeline-item,
-.code-card,
-.cta-b
-```
