@@ -368,10 +368,16 @@ for(let i = 0; i < 50; i++){
   const span = document.createElement('span')
 
   span.innerText =
-    chars[Math.floor(Math.random() * chars.length)]
+  Math.random() > 0.5 ? '1' : '0'
 
   span.style.left =
-    Math.random() * 100 + 'vw'
+  Math.random() * window.innerWidth + 'px'
+
+  span.style.opacity =
+  Math.random()
+
+span.style.fontSize =
+  (Math.random() * 18 + 10) + 'px'
 
   span.style.animationDuration =
     (Math.random() * 5 + 5) + 's'
