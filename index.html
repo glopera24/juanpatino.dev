@@ -840,6 +840,9 @@ body{
 # script.js
 
 ```javascript
+// =========================
+// REVEAL ANIMATIONS
+// =========================
 const fades = document.querySelectorAll('.fade-up')
 
 const observer = new IntersectionObserver((entries)=>{
@@ -853,12 +856,14 @@ const observer = new IntersectionObserver((entries)=>{
   })
 
 },{
-  threshold:0.2
+  threshold:0.15
 })
 
 fades.forEach(el=>observer.observe(el))
 
+// =========================
 // HEADER EFFECT
+// =========================
 const header = document.getElementById('header')
 
 window.addEventListener('scroll',()=>{
@@ -870,4 +875,276 @@ window.addEventListener('scroll',()=>{
   }
 
 })
+
+// =========================
+// CURSOR GLOW EFFECT
+// =========================
+const glow = document.createElement('div')
+glow.classList.add('cursor-glow')
+document.body.appendChild(glow)
+
+window.addEventListener('mousemove',(e)=>{
+
+  glow.style.left = `${e.clientX}px`
+  glow.style.top = `${e.clientY}px`
+
+})
+
+// =========================
+// PARALLAX EFFECT
+// =========================
+const gradients = document.querySelectorAll('.gradient')
+
+window.addEventListener('mousemove',(e)=>{
+
+  const x = e.clientX / window.innerWidth
+  const y = e.clientY / window.innerHeight
+
+  gradients.forEach((gradient,index)=>{
+
+    const speed = (index + 1) * 30
+
+    gradient.style.transform = `translate(${x * speed}px, ${y * speed}px)`
+
+  })
+
+})
+
+// =========================
+// TYPING EFFECT
+// =========================
+const title = document.querySelector('.hero h1')
+
+const originalText = title.innerHTML
+
+let i = 0
+
+title.innerHTML = ''
+
+function typing(){
+
+  if(i < originalText.length){
+
+    title.innerHTML += originalText.charAt(i)
+    i++
+
+    setTimeout(typing,20)
+
+  }
+
+}
+
+typing()
+
+// =========================
+// FLOATING PARTICLES
+// =========================
+const particlesContainer = document.createElement('div')
+particlesContainer.classList.add('particles')
+document.body.appendChild(particlesContainer)
+
+for(let i = 0; i < 30; i++){
+
+  const particle = document.createElement('span')
+
+  particle.style.left = Math.random() * 100 + 'vw'
+  particle.style.animationDuration = (Math.random() * 10 + 10) + 's'
+  particle.style.animationDelay = Math.random() * 5 + 's'
+
+  particlesContainer.appendChild(particle)
+
+}
+```
+
+---
+
+# CSS EXTRA (AGREGAR AL FINAL DE style.css)
+
+```css
+/* =========================
+   CURSOR GLOW
+========================= */
+.cursor-glow{
+  position:fixed;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(124,58,237,0.18), transparent 70%);
+  pointer-events:none;
+  transform:translate(-50%, -50%);
+  z-index:-1;
+  transition:transform 0.05s linear;
+}
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+.particles{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  z-index:-2;
+}
+
+.particles span{
+  position:absolute;
+  bottom:-20px;
+  width:3px;
+  height:3px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.3);
+  animation:floatParticle linear infinite;
+}
+
+@keyframes floatParticle{
+
+  from{
+    transform:translateY(0);
+    opacity:0;
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  to{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+
+}
+
+/* =========================
+   HERO ENTRANCE
+========================= */
+.hero-left{
+  animation:heroLeft 1.2s ease forwards;
+}
+
+.hero-right{
+  animation:heroRight 1.2s ease forwards;
+}
+
+@keyframes heroLeft{
+
+  from{
+    opacity:0;
+    transform:translateX(-60px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+
+}
+
+@keyframes heroRight{
+
+  from{
+    opacity:0;
+    transform:translateX(60px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+
+}
+
+/* =========================
+   PREMIUM CARD EFFECTS
+========================= */
+.service-card::before,
+.result-card::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg, rgba(255,255,255,0.05), transparent);
+  opacity:0;
+  transition:0.4s ease;
+}
+
+.service-card:hover::before,
+.result-card:hover::before{
+  opacity:1;
+}
+
+.service-card:hover,
+.result-card:hover,
+.timeline-item:hover{
+  box-shadow:0 30px 60px rgba(124,58,237,0.15);
+}
+
+/* =========================
+   BUTTON GLOW
+========================= */
+.primary{
+  position:relative;
+  overflow:hidden;
+}
+
+.primary::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  transition:0.8s;
+}
+
+.primary:hover::before{
+  left:100%;
+}
+
+/* =========================
+   CODE CARD FLOAT
+========================= */
+.code-card{
+  animation:floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#050816;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(var(--primary),var(--secondary));
+  border-radius:20px;
+}
+
+/* =========================
+   GLASSMORPHISM
+========================= */
+.service-card,
+.result-card,
+.timeline-item,
+.code-card,
+.cta-b
 ```
