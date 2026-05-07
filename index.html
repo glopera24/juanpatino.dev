@@ -1,187 +1,873 @@
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Juan Patiño | Software que escala negocios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO básico -->
-  <meta name="description" content="Automatiza y escala tu empresa con software a medida. Diagnóstico gratis por WhatsApp.">
+  <title>Juan Patiño | Software Engineering</title>
 
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
+  <meta
+    name="description"
+    content="Desarrollo software escalable, automatizaciones y arquitectura de sistemas para empresas que quieren crecer sin límites."
+  />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<div class="bg"></div>
+  <!-- BACKGROUND -->
+  <div class="bg-grid"></div>
+  <div class="gradient gradient-1"></div>
+  <div class="gradient gradient-2"></div>
 
-<!-- HEADER -->
-<header class="header" id="header">
-  <div class="container nav">
-    <div class="logo">Juan Patiño</div>
-    <a href="https://wa.me/573203635840?text=Hola,%20quiero%20optimizar%20mi%20empresa"
-       class="btn primary small">
-       Hablar ahora
-    </a>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav">
 
-<!-- HERO (HOOK) -->
-<section class="hero">
-  <div class="container hero-grid">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="ri-code-s-slash-line"></i>
+        </div>
 
-    <div class="fade">
-      <h1>
-        Automatiza y escala tu negocio con software a medida
-      </h1>
-
-      <p>
-        Si tu empresa depende de procesos manuales, sistemas lentos o errores operativos,
-        estás perdiendo dinero todos los días.
-      </p>
-
-      <div class="cta">
-        <a href="https://wa.me/573203635840?text=Quiero%20un%20diagnóstico%20de%20mi%20empresa"
-           class="btn primary">
-           Solicitar diagnóstico gratis
-        </a>
+        <div>
+          <span>Juan Patiño</span>
+          <small>Software Engineer</small>
+        </div>
       </div>
 
-      <small>Respuesta rápida · Sin compromiso</small>
+      <nav class="desktop-nav">
+        <a href="#services">Servicios</a>
+        <a href="#results">Resultados</a>
+        <a href="#process">Proceso</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <a href="https://wa.me/573203635840" class="btn primary small-btn">
+        Agendar llamada
+      </a>
+
     </div>
+  </header>
 
-    <div class="glass fade">
-      <div>
-        <span>Experiencia</span>
-        <strong>+6 años</strong>
-      </div>
-      <div>
-        <span>Proyectos</span>
-        <strong>+30</strong>
-      </div>
-      <div>
-        <span>Especialidad</span>
-        <strong>Escalabilidad</strong>
-      </div>
-    </div>
+  <!-- HERO -->
+  <section class="hero">
 
-  </div>
-</section>
+    <div class="container hero-grid">
 
-<!-- PROBLEMAS -->
-<section class="section">
-  <div class="container center">
-    <h2>¿Te está pasando esto?</h2>
+      <div class="hero-left fade-up">
 
-    <div class="grid">
-      <div class="card fade">Procesos manuales que consumen tiempo</div>
-      <div class="card fade">Errores constantes en la operación</div>
-      <div class="card fade">Sistemas lentos o inestables</div>
-      <div class="card fade">Herramientas que no se integran</div>
-      <div class="card fade">Dificultad para escalar</div>
-      <div class="card fade">Dependencia excesiva de Excel</div>
-    </div>
-  </div>
-</section>
+        <div class="badge">
+          <span></span>
+          Ingeniería de software · Automatización · Escalabilidad
+        </div>
 
-<!-- SOLUCIÓN -->
-<section class="section dark">
-  <div class="container center">
-    <h2>Cómo lo soluciono</h2>
+        <h1>
+          Construyo sistemas que ayudan a empresas a crecer sin límites
+        </h1>
 
-    <div class="grid">
-      <div class="card fade">Automatización de procesos</div>
-      <div class="card fade">Software a medida</div>
-      <div class="card fade">Integración de sistemas</div>
-      <div class="card fade">Optimización de rendimiento</div>
-      <div class="card fade">Arquitectura escalable</div>
-      <div class="card fade">Eliminación de cuellos de botella</div>
-    </div>
-  </div>
-</section>
+        <p>
+          Desarrollo plataformas modernas, automatizo procesos y optimizo operaciones
+          para empresas que necesitan velocidad, escalabilidad y estabilidad.
+        </p>
 
-<!-- RESULTADOS -->
-<section class="section">
-  <div class="container center">
-    <h2>Resultados</h2>
+        <div class="hero-buttons">
+          <a href="https://wa.me/573203635840?text=Hola,%20quiero%20optimizar%20mi%20empresa"
+            class="btn primary">
+            <i class="ri-whatsapp-line"></i>
+            Hablar por WhatsApp
+          </a>
 
-    <div class="grid">
+          <a href="#services" class="btn secondary">
+            Ver servicios
+          </a>
+        </div>
 
-      <div class="card fade">
-        <h3>+60% eficiencia</h3>
-        <p>en procesos internos</p>
-      </div>
+        <div class="hero-stats">
 
-      <div class="card fade">
-        <h3>0 errores manuales</h3>
-        <p>automatización completa</p>
+          <div>
+            <strong>+6</strong>
+            <span>Años</span>
+          </div>
+
+          <div>
+            <strong>+30</strong>
+            <span>Proyectos</span>
+          </div>
+
+          <div>
+            <strong>99%</strong>
+            <span>Disponibilidad</span>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="card fade">
-        <h3>Escalabilidad real</h3>
-        <p>sin caídas del sistema</p>
+      <!-- RIGHT -->
+      <div class="hero-right fade-up delay">
+
+        <div class="code-card">
+
+<pre>
+<span class="purple">const</span> business = {
+  growth: <span class="green">true</span>,
+  automation: <span class="green">true</span>,
+  scalability: <span class="green">true</span>,
+  bottlenecks: <span class="red">false</span>
+}
+
+<span class="blue">optimize</span>(business)
+</pre>
+
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- OFERTA -->
-<section class="section dark">
-  <div class="container center">
-    <h2>Diagnóstico GRATIS</h2>
+  </section>
 
-    <p>
-      Analizo tu negocio y te digo exactamente dónde estás perdiendo dinero
-      y cómo solucionarlo con tecnología.
-    </p>
+  <!-- SERVICES -->
+  <section id="services" class="section">
 
-    <div class="card fade">
-      <p>✔ Evaluación de procesos</p>
-      <p>✔ Identificación de errores</p>
-      <p>✔ Propuesta técnica clara</p>
+    <div class="container">
+
+      <div class="section-title fade-up">
+        <small>SERVICIOS</small>
+        <h2>Soluciones enfocadas en crecimiento</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="service-card fade-up">
+          <i class="ri-terminal-window-line"></i>
+          <h3>Software a medida</h3>
+          <p>
+            Sistemas adaptados exactamente a la operación de tu empresa.
+          </p>
+        </div>
+
+        <div class="service-card fade-up delay">
+          <i class="ri-flashlight-line"></i>
+          <h3>Automatización</h3>
+          <p>
+            Reduce trabajo manual y elimina procesos repetitivos.
+          </p>
+        </div>
+
+        <div class="service-card fade-up delay-2">
+          <i class="ri-cloud-line"></i>
+          <h3>Arquitectura escalable</h3>
+          <p>
+            Infraestructura preparada para crecimiento real.
+          </p>
+        </div>
+
+        <div class="service-card fade-up">
+          <i class="ri-links-line"></i>
+          <h3>Integraciones</h3>
+          <p>
+            APIs, CRM, pagos y herramientas conectadas.
+          </p>
+        </div>
+
+        <div class="service-card fade-up delay">
+          <i class="ri-speed-up-line"></i>
+          <h3>Optimización</h3>
+          <p>
+            Más velocidad, menos costos y mejor rendimiento.
+          </p>
+        </div>
+
+        <div class="service-card fade-up delay-2">
+          <i class="ri-line-chart-line"></i>
+          <h3>Escalabilidad</h3>
+          <p>
+            Sistemas sólidos para alto volumen de usuarios.
+          </p>
+        </div>
+
+      </div>
+
     </div>
 
-    <a href="https://wa.me/573203635840?text=Quiero%20mi%20diagnóstico"
-       class="btn primary big">
-       Solicitar ahora
-    </a>
-  </div>
-</section>
+  </section>
 
-<!-- PROCESO -->
-<section class="section">
-  <div class="container center">
-    <h2>Proceso de trabajo</h2>
+  <!-- RESULTS -->
+  <section id="results" class="section dark-section">
 
-    <div class="grid">
-      <div class="card fade">1. Diagnóstico</div>
-      <div class="card fade">2. Propuesta</div>
-      <div class="card fade">3. Implementación</div>
+    <div class="container">
+
+      <div class="section-title center fade-up">
+        <small>RESULTADOS</small>
+        <h2>Tecnología pensada para negocio</h2>
+      </div>
+
+      <div class="results-grid">
+
+        <div class="result-card fade-up">
+          <h3>+60%</h3>
+          <p>Mejora en rendimiento operativo</p>
+        </div>
+
+        <div class="result-card fade-up delay">
+          <h3>0</h3>
+          <p>Errores manuales tras automatización</p>
+        </div>
+
+        <div class="result-card fade-up delay-2">
+          <h3>24/7</h3>
+          <p>Disponibilidad y estabilidad</p>
+        </div>
+
+      </div>
+
     </div>
-  </div>
-</section>
 
-<!-- CTA FINAL -->
-<section class="section center">
-  <div class="container">
-    <h2>Si no optimizas tu sistema, tu competencia lo hará</h2>
+  </section>
 
-    <a href="https://wa.me/573203635840?text=Necesito%20ayuda%20con%20mi%20empresa"
-       class="btn primary big">
-       Hablar por WhatsApp
-    </a>
-  </div>
-</section>
+  <!-- PROCESS -->
+  <section id="process" class="section">
 
-<!-- BOTÓN FLOTANTE -->
-<a href="https://wa.me/573203635840" class="whatsapp-float">💬</a>
+    <div class="container">
 
-<script src="script.js"></script>
+      <div class="section-title fade-up">
+        <small>PROCESO</small>
+        <h2>Cómo trabajamos</h2>
+      </div>
 
+      <div class="timeline">
+
+        <div class="timeline-item fade-up">
+          <div class="number">01</div>
+          <div>
+            <h3>Diagnóstico</h3>
+            <p>Analizo la operación y detecto cuellos de botella.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up delay">
+          <div class="number">02</div>
+          <div>
+            <h3>Estrategia</h3>
+            <p>Diseño una solución técnica alineada a negocio.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up delay-2">
+          <div class="number">03</div>
+          <div>
+            <h3>Implementación</h3>
+            <p>Desarrollo sólido, rápido y listo para escalar.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta-section">
+
+    <div class="container cta-box fade-up">
+
+      <small>¿Listo para optimizar tu empresa?</small>
+
+      <h2>
+        La tecnología correcta puede ahorrarte tiempo,
+        dinero y errores operativos.
+      </h2>
+
+      <a href="https://wa.me/573203635840?text=Hola,%20quiero%20hablar%20sobre%20mi%20empresa"
+         class="btn primary large-btn">
+        <i class="ri-whatsapp-line"></i>
+        Solicitar diagnóstico
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FLOAT -->
+  <a href="https://wa.me/573203635840" class="float-btn">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
+```
+
+---
+
+# style.css
+
+```css
+:root{
+  --bg:#050816;
+  --card:#0d1224;
+  --border:rgba(255,255,255,0.08);
+  --text:#ffffff;
+  --sub:#9ca3af;
+  --primary:#7c3aed;
+  --secondary:#06b6d4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.bg-grid{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size:50px 50px;
+  z-index:-3;
+}
+
+.gradient{
+  position:fixed;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  filter:blur(120px);
+  z-index:-2;
+}
+
+.gradient-1{
+  background:#7c3aed;
+  top:-100px;
+  left:-100px;
+  opacity:0.25;
+}
+
+.gradient-2{
+  background:#06b6d4;
+  bottom:-100px;
+  right:-100px;
+  opacity:0.2;
+}
+
+.header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  transition:0.3s ease;
+}
+
+.header.scrolled{
+  background:rgba(5,8,22,0.8);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo-icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.logo span{
+  display:block;
+  font-weight:700;
+}
+
+.logo small{
+  color:var(--sub);
+}
+
+.desktop-nav{
+  display:flex;
+  gap:30px;
+}
+
+.desktop-nav a{
+  color:#fff;
+  text-decoration:none;
+  position:relative;
+}
+
+.desktop-nav a::after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:var(--secondary);
+  left:0;
+  bottom:-6px;
+  transition:0.3s;
+}
+
+.desktop-nav a:hover::after{
+  width:100%;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 18px;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:100px;
+  margin-bottom:30px;
+  background:rgba(255,255,255,0.03);
+  color:#cbd5e1;
+}
+
+.badge span{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#00ff88;
+  box-shadow:0 0 10px #00ff88;
+}
+
+.hero h1{
+  font-size:64px;
+  line-height:1.05;
+  margin-bottom:24px;
+}
+
+.hero p{
+  color:var(--sub);
+  font-size:18px;
+  line-height:1.7;
+  max-width:650px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:18px;
+  margin-top:40px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:16px 28px;
+  border-radius:16px;
+  text-decoration:none;
+  transition:0.3s ease;
+  font-weight:600;
+}
+
+.primary{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#fff;
+  box-shadow:0 15px 40px rgba(124,58,237,0.3);
+}
+
+.primary:hover{
+  transform:translateY(-4px);
+}
+
+.secondary{
+  border:1px solid rgba(255,255,255,0.08);
+  color:#fff;
+  background:rgba(255,255,255,0.03);
+}
+
+.secondary:hover{
+  background:rgba(255,255,255,0.08);
+}
+
+.hero-stats{
+  display:flex;
+  gap:50px;
+  margin-top:60px;
+}
+
+.hero-stats strong{
+  display:block;
+  font-size:34px;
+}
+
+.hero-stats span{
+  color:var(--sub);
+}
+
+.code-card{
+  background:#0b1020;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:28px;
+  padding:40px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 30px 60px rgba(0,0,0,0.4);
+}
+
+.code-card::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,transparent,rgba(255,255,255,0.03));
+}
+
+.code-card pre{
+  font-size:18px;
+  line-height:1.8;
+  color:#fff;
+}
+
+.purple{color:#c084fc}
+.blue{color:#38bdf8}
+.green{color:#4ade80}
+.red{color:#f87171}
+
+.terminal-bar{
+  display:flex;
+  gap:10px;
+  margin-top:30px;
+}
+
+.terminal-bar span{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+}
+
+.terminal-bar span:nth-child(1){background:#ff5f57}
+.terminal-bar span:nth-child(2){background:#febc2e}
+.terminal-bar span:nth-child(3){background:#28c840}
+
+.section{
+  padding:120px 0;
+}
+
+.dark-section{
+  background:rgba(255,255,255,0.02);
+}
+
+.section-title{
+  margin-bottom:60px;
+}
+
+.section-title small{
+  color:var(--secondary);
+  letter-spacing:2px;
+}
+
+.section-title h2{
+  font-size:48px;
+  margin-top:10px;
+}
+
+.center{
+  text-align:center;
+}
+
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.service-card,
+.result-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.06);
+  padding:35px;
+  border-radius:24px;
+  transition:0.35s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.service-card:hover,
+.result-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(124,58,237,0.4);
+}
+
+.service-card i{
+  font-size:34px;
+  margin-bottom:20px;
+  display:inline-block;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.service-card h3,
+.result-card h3{
+  margin-bottom:14px;
+  font-size:24px;
+}
+
+.service-card p,
+.result-card p{
+  color:var(--sub);
+  line-height:1.7;
+}
+
+.results-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.result-card h3{
+  font-size:60px;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.timeline{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.timeline-item{
+  display:flex;
+  gap:30px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.05);
+  padding:35px;
+  border-radius:24px;
+}
+
+.number{
+  min-width:70px;
+  height:70px;
+  border-radius:20px;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:22px;
+}
+
+.timeline-item p{
+  color:var(--sub);
+  margin-top:10px;
+}
+
+.cta-section{
+  padding:140px 0;
+}
+
+.cta-box{
+  background:linear-gradient(135deg,rgba(124,58,237,0.15),rgba(6,182,212,0.1));
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:32px;
+  padding:70px;
+  text-align:center;
+}
+
+.cta-box small{
+  color:var(--secondary);
+  letter-spacing:2px;
+}
+
+.cta-box h2{
+  font-size:48px;
+  max-width:900px;
+  margin:20px auto 40px;
+}
+
+.float-btn{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  width:68px;
+  height:68px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#25D366,#1ebe5d);
+  color:#fff;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  z-index:999;
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.08)}
+  100%{transform:scale(1)}
+}
+
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s ease;
+}
+
+.fade-up.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.delay{
+  transition-delay:0.15s;
+}
+
+.delay-2{
+  transition-delay:0.3s;
+}
+
+@media(max-width:980px){
+
+  .hero-grid,
+  .cards-grid,
+  .results-grid{
+    grid-template-columns:1fr;
+  }
+
+  .desktop-nav{
+    display:none;
+  }
+
+  .hero{
+    padding-top:140px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero-buttons,
+  .hero-stats{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .section-title h2,
+  .cta-box h2{
+    font-size:34px;
+  }
+
+  .cta-box{
+    padding:40px 30px;
+  }
+
+}
+```
+
+---
+
+# script.js
+
+```javascript
+const fades = document.querySelectorAll('.fade-up')
+
+const observer = new IntersectionObserver((entries)=>{
+
+  entries.forEach(entry=>{
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+    }
+
+  })
+
+},{
+  threshold:0.2
+})
+
+fades.forEach(el=>observer.observe(el))
+
+// HEADER EFFECT
+const header = document.getElementById('header')
+
+window.addEventListener('scroll',()=>{
+
+  if(window.scrollY > 40){
+    header.classList.add('scrolled')
+  }else{
+    header.classList.remove('scrolled')
+  }
+
+})
+```
